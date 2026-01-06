@@ -30,18 +30,18 @@ The command below will open the text editor where we can change the commit messa
 
 Update the working branch to have it as a backup:
 
-    $ cd ~/java/projects/digger
+    $ cd ~/java/projects/project
     $ git pull origin master
 
-Create a new clone to use as workshop:
+Create a new clone to use as experimentation:
 
     $ cd ..
-    $ git clone git@github.com:htmfilho/digger.git digger-temp
-    $ cd digger-temp
+    $ git clone git@github.com:htmfilho/project.git project-temp
+    $ cd project-temp
 
 You can also clone a specific branch:
 
-    $ git clone --branch bugfix git@github.com:htmfilho/digger.git digger-temp
+    $ git clone --branch bugfix git@github.com:htmfilho/project.git project-temp
 
 Look at the log to see the id of the latest valid commit:
 
@@ -100,18 +100,18 @@ The command below will open the text editor where we can change the commit messa
 
 Update the working branch to have it as a backup:
 
-    $ cd ~/java/projects/digger
+    $ cd ~/java/projects/project
     $ git pull origin master
 
 Create a new clone to use as workshop:
 
     $ cd ..
-    $ git clone git@github.com:htmfilho/digger.git digger-temp
-    $ cd digger-temp
+    $ git clone git@github.com:htmfilho/project.git project-temp
+    $ cd project-temp
 
 You can also clone a specific branch:
 
-    $ git clone --branch bugfix git@github.com:htmfilho/digger.git digger-temp
+    $ git clone --branch bugfix git@github.com:htmfilho/project.git project-temp
 
 Look at the log to see the id of the latest valid commit:
 
