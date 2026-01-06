@@ -1,5 +1,27 @@
 # Workflow
 
+Let's first clarify that, when discussing the workflow, we use the term "Issue" to refer to a change request, not a technical issue that could happen when we are dealing with version control.
+
+## Before
+
+## During
+
+### Dealing with Unexpected Issues
+
+Imagine a scenario where you are busy, working on an issue, then a more urgent issue comes up, so you have to pause what you are doing to shift context. It happens all the time. Git is our best friend in this kind of situation, but we have to use it properly.
+
+#### The `dev` Branch Must Be Immutable
+
+I was working on an issue and, in the spirit of saving time, I have commited changes directly to the branch `main`. In this project, we could not push changes to the remote branch `main`, so we needed to create a separate branch from `main` and create a pull request. I thought I could simply do that and move on, which normally works when everything goes well.
+
+However, I may need to test something in `main` before the pull request is accepted, but since it contains changes then it doesn´t behave the same way. I would need to reset my local dev branch to be able to reproduce the issue. It can be done running:
+
+```cmd
+$ git reset --hard origin/main
+```
+
+## After
+
 #### Changing Several Commits in Bulk
 
 If commits were done with a wrong author, use Git Rebase to fix the authors of the commits:
