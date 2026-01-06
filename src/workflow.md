@@ -1,6 +1,6 @@
 # Workflow
 
-==== Changing Several Commits in Bulk
+#### Changing Several Commits in Bulk
 
 If commits were done with a wrong author, use Git Rebase to fix the authors of the commits:
 
@@ -11,22 +11,22 @@ If commits were done with a wrong author, use Git Rebase to fix the authors of t
 
 The rebase starts from the commit after the informed `<commit-id>`. It wouldn't work if the rebase needs to consider the very first commit. To include the first commit, start an interactive rebase of all commits using `git rebase -i --root`.
 
-==== Change the Most Recent Commit Message
+#### Change the Most Recent Commit Message
 
 The command below will open the text editor where we can change the commit message:
 
     $ git commit --amend
 
-==== Adding a File to the Most Recent Commit
+#### Adding a File to the Most Recent Commit
 
     $ git add missed-file.txt
     $ git commit --amend
     
-==== Undo the Most Recent Commit
+#### Undo the Most Recent Commit
 
     $ git reset HEAD~
     
-==== Undo One or More Commits Pushed to Remote
+#### Undo One or More Commits Pushed to Remote
 
 Update the working branch to have it as a backup:
 
@@ -59,7 +59,7 @@ The clients that still have the old commits should update their local branches a
 
     $ git reset –hard origin/master
 
-==== Remove a File From the Repository Without Deleting It
+#### Remove a File From the Repository Without Deleting It
 
 For a single file:
 
@@ -70,7 +70,7 @@ For a single directory:
     $ git rm --cached -r logs
 
 
-==== Changing Several Commits in Bulk
+#### Changing Several Commits in Bulk
 
 If commits were done with a wrong author, use Git Rebase to fix the authors of the commits:
 
@@ -81,22 +81,22 @@ If commits were done with a wrong author, use Git Rebase to fix the authors of t
 
 The rebase starts from the commit after the informed `<commit-id>`. It wouldn't work if the rebase needs to consider the very first commit. To include the first commit, start an interactive rebase of all commits using `git rebase -i --root`.
 
-==== Change the Most Recent Commit Message
+#### Change the Most Recent Commit Message
 
 The command below will open the text editor where we can change the commit message:
 
     $ git commit --amend
 
-==== Adding a File to the Most Recent Commit
+#### Adding a File to the Most Recent Commit
 
     $ git add missed-file.txt
     $ git commit --amend
     
-==== Undo the Most Recent Commit
+#### Undo the Most Recent Commit
 
     $ git reset HEAD~
     
-==== Undo One or More Commits Pushed to Remote
+#### Undo One or More Commits Pushed to Remote
 
 Update the working branch to have it as a backup:
 
@@ -129,7 +129,7 @@ The clients that still have the old commits should update their local branches a
 
     $ git reset –hard origin/master
 
-==== Remove a File From the Repository Without Deleting It
+#### Remove a File From the Repository Without Deleting It
 
 For a single file:
 
@@ -139,7 +139,7 @@ For a single directory:
 
     $ git rm --cached -r logs
 
-==== Restore a Deleted Branch
+#### Restore a Deleted Branch
 
 The follow commands recover a branch that was deleted locally with the command `git branch -D issue-52`. Use `reflog` to figure out the _<sha>_ of the deleted branch:
 

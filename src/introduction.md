@@ -15,7 +15,7 @@ Before using Git, let's do a few initial configurations:
        $ git config --global user.email "you@example.com"
        $ git config --global user.name "Your Name"
 
-==== Configuring Git to Simplify Authentication
+#### Configuring Git to Simplify Authentication
 
 For the moment, every time we push code to GitHub the prompt asks for a username and password. We can bypass this step by registering a SSH key. To do that, we first check whether there is already an existing SSH key we can reuse:
 

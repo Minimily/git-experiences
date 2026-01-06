@@ -31,7 +31,7 @@ for the day, run:
 to download the rest of the repo. We want this to enable the "blame" feature in
 our IDE.
 
-==== Changing The Author To The One Recognizable by GitHub
+#### Changing The Author To The One Recognizable by GitHub
 
 In case your default Git author is not the same as GitHub, configure the author of the repository:
 
@@ -40,9 +40,9 @@ In case your default Git author is not the same as GitHub, configure the author 
 
 It can also be done to a specific commit:
 
-    $ git commit --author="John Doe <john@doe.org>"
+    $ git commit --author#"John Doe <john@doe.org>"
 
-==== Setting Pull Behaviour
+#### Setting Pull Behaviour
 
 The `git pull` command merges the remote branch into the local branch with a merge commit, but we don't think this commit is useful. We want to make sure our commits represent changes made by developers only. So, we would like to ask you to use rebase to merge remote branches locally. You can do it at every `pull` with:
 
@@ -54,7 +54,7 @@ or change a local configuration to make it the default `pull` behavior:
     
 Note: you don't need to run this local configuration if you already have it globally.
 
-==== Pruning Deleted Remote Branches
+#### Pruning Deleted Remote Branches
 
 When branches are removed from origin, this change is not automatically reflected in the local clone when doing a git pull or git fetch. To have deleted remote branches automatically pruned from the local repo, set the following config:
 
