@@ -6,14 +6,22 @@ Git is a distributed version control system used to manage the source code of Di
 
 Before using Git, let's do a few initial configurations:
 
-* The initial branch name to use in all new repositories:
+1. The initial branch name to use in all new repositories:
 
        $ git config --global init.DefaultBranch main
 
-* Identify the author of the commits:
+2. Identify the author of the commits:
 
        $ git config --global user.email "you@example.com"
        $ git config --global user.name "Your Name"
+
+3. In case of divergent branches, Git offers different strategies to merge the
+   remote and local changes. We need to specify how to reconcile them by
+   running one of the following commands before your next pull:
+
+       $ git config --global pull.rebase false  # merge
+       $ git config --global pull.rebase true   # rebase
+       $ git config --global pull.ff only       # fast-forward only
 
 #### Configuring Git to Simplify Authentication
 
